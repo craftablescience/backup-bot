@@ -1,0 +1,46 @@
+{
+	"name": "backup-bot",
+	"version": "0.1.0",
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"engineStrict": true,
+	"main": "build/main.js",
+	"scripts": {
+		"start": "node build/main.js",
+		"update-commands": "node build/main.js --update-commands",
+		"stop": "node build/main.js --stop",
+		"build": "tsc -p .",
+		"clean": "rm -rf build",
+		"lint": "eslint src --ext .ts --fix",
+		"dev": "tsc-watch --onSuccess \"node build/main.js\""
+	},
+	"author": "craftablescience",
+	"description": "Backs up a Discord server, including member roles, channels, message contents, and even attachments!",
+	"license": "MIT",
+	"homepage": "https://github.com/craftablescience/backup-bot",
+	"bugs": {
+		"url": "https://github.com/craftablescience/backup-bot/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/craftablescience/backup-bot.git"
+	},
+	"dependencies": {
+		"console-stamp": "^3.1.1",
+		"discord-api-types": "^0.37.34",
+		"discord.js": "^14.2.0",
+		"fs-extra": "^11.1.0",
+		"node-fetch": "^2.6.7"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^11.0.1",
+		"@types/node": "^18.11.18",
+		"@types/node-fetch": "^2.5.7",
+		"@typescript-eslint/eslint-plugin": "^5.50.0",
+		"@typescript-eslint/parser": "^5.51.0",
+		"eslint": "^8.34.0",
+		"tsc-watch": "^6.0.0",
+		"typescript": "^4.9.5"
+	}
+}
