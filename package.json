@@ -28,7 +28,7 @@
 	},
 	"dependencies": {
 		"console-stamp": "^3.1.1",
-		"discord-api-types": "^0.37.34",
+		"discord-api-types": "^0.37.42",
 		"discord.js": "^14.8.0",
 		"fs-extra": "^11.1.0",
 		"node-fetch": "^2.6.7"
